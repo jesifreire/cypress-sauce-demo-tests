@@ -51,8 +51,8 @@ cypress/
 
 Desenvolvido por Jesiane Freire
 
-📫 Como me encontrar: [LinkedIn](https://www.linkedin.com/in/jesiane-freire/)
-
+📫 Como me encontrar:
+ [LinkedIn](https://www.linkedin.com/in/jesiane-freire/) - Meu LinkedIn
 
 📌 Observações
 Este projeto tem fins educacionais e de portfólio.
