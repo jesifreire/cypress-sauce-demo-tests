@@ -35,6 +35,7 @@ Interface Gráfica (modo interativo)
 npx cypress open
 Linha de comando (modo headless)
 npx cypress run
+
 📂 Estrutura dos testes
 cypress/
 ├── e2e/
@@ -45,8 +46,11 @@ cypress/
 │   └── commands.js       # Comandos customizados (ex: login reutilizável)
 ├── fixtures/
 │   └── users.json        # Dados de teste (opcional)
-👤 Autor
+
+## 👤 Autor
+
 Desenvolvido por Jesiane Freire
+
 📫 Como me encontrar: [LinkedIn](https://www.linkedin.com/in/jesiane-freire/)
 
 
