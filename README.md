@@ -47,7 +47,10 @@ cypress/
 │   └── users.json        # Dados de teste (opcional)
 👤 Autor
 Desenvolvido por Jesiane Freire
-LinkedIn | GitHub
+## 📫 Como me encontrar
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jesiane-freire/)
+
+
 📌 Observações
 Este projeto tem fins educacionais e de portfólio.
 
