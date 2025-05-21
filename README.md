@@ -46,15 +46,14 @@ cypress/
 │   └── commands.js       # Comandos customizados (ex: login reutilizável)
 ├── fixtures/
 │   └── users.json        # Dados de teste (opcional)
-
+```
 ## 👤 Autor
----
+
 Desenvolvido por Jesiane Freire
 
 📫 Como me encontrar:
 - [LinkedIn](https://www.linkedin.com/in/jesiane-freire/) - Meu LinkedIn
 
----
 📌 Observações
 Este projeto tem fins educacionais e de portfólio.
 
