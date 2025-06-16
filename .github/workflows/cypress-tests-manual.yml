@@ -19,10 +19,23 @@ jobs:
       - name: Executar testes Cypress
         run: npx cypress run
 
+      - name: Upload de vídeos Cypress (se houver)
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-videos
+          path: cypress/videos
+
+      - name: Upload de screenshots Cypress (se houver)
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
       - name: Enviar notificação para o Discord
         if: always()
         run: |
-          ...
           STATUS="${{ job.status }}"
           curl -H "Content-Type: application/json" \
                -X POST \
