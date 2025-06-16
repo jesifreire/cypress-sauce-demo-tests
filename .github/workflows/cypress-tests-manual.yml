@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout do código
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Instalar dependências
         run: npm install
@@ -21,14 +21,14 @@ jobs:
 
       - name: Upload de vídeos Cypress (se houver)
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cypress-videos
           path: cypress/videos
 
       - name: Upload de screenshots Cypress (se houver)
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cypress-screenshots
           path: cypress/screenshots
