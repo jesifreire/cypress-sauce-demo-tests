@@ -39,7 +39,8 @@ jobs:
           STATUS="${{ job.status }}"
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d "{\"content\": \"🔔 Testes Cypress finalizados com status: **$STATUS**\"}" \
+               -d '{
+                     "content": "🙌 *Teste Cypress concluído!*\n👤 Disparado por: ${{ github.actor }}\n📂 Repositório: ${{ github.repository }}\n📄 Branch: ${{ github.ref_name }}\n✅ Status: ${{ job.status }}"
                ${{ secrets.DISCORD_WEBHOOK }}
 
     
