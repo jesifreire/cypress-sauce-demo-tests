@@ -26,7 +26,7 @@ Cypress.Commands.add('finishCheckout', () => {
   cy.get('.complete-header').should('have.text', 'Thank you for your order!')
   cy.get('.complete-text').should(
     'have.text',
-    'Your order has been dispatched, and will arrive just as fast as the pony can get theres!'
+    'Your order has been dispatched, and will arrive just as fast as the pony can get there!'
   )
   cy.get('[data-test="back-to-products"]').should('have.text', 'Back Home')
   cy.get('[data-test="back-to-products"]').click()
