@@ -37,10 +37,14 @@ jobs:
         if: always()
         run: |
           STATUS="${{ job.status }}"
+          ACTOR="${{ github.actor }}"
+          REPO="${{ github.repository }}"
+          BRANCH="${{ github.ref_name }}"
+          
+          MESSAGE="🙌 *Teste Cypress concluído!*\n👤 Disparado por: $ACTOR\n📂 Repositório: $REPO\n📄 Branch: $BRANCH\n✅ Status: $STATUS"
+
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d '{
-                     "content": "🙌 *Teste Cypress concluído!*\n👤 Disparado por: ${{ github.actor }}\n📂 Repositório: ${{ github.repository }}\n📄 Branch: ${{ github.ref_name }}\n✅ Status: ${{ job.status }}"
+               -d "{\"content\": \"$MESSAGE\"}" \
                ${{ secrets.DISCORD_WEBHOOK }}
 
-    
